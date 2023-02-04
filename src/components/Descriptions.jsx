@@ -8,7 +8,7 @@ import { getFormattedWeatherData } from '../weatherService';
 
 const Descriptions = ({weather, units}) => {
 
-    const tempUnit = units === 'metric' ? '°C' : '°F'
+    const tempUnit = units === 'metric' ? '°c' : '°F'
     const windUnit = units === 'metric' ? 'm/s' : 'm/h'
 
     const cards = [
@@ -63,7 +63,7 @@ const Descriptions = ({weather, units}) => {
                 {icon}
                 <small>{title}</small>
             </div>
-            <h2>{`${data} ${unit}`}</h2>
+            <h2>{`${data}${unit}`}</h2>
         </div>
     ))}
 

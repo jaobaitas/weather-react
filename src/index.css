@@ -7,7 +7,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'montseratt', sans-serif;
 }
 
 .app {
@@ -44,54 +44,60 @@
     color: white;
 }
 
-.section__inputs, .section__temperature {
+.section__temperature {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: var(--section-overlay);
 }
 
 .section__inputs>input {
-    border: 0.8px solid white;
+    display: block;
+    width: 100%;
+    padding: 1rem;
+
+    border: none;
     border-radius: 0.4rem;
-    background-color: transparent;
-    color: white;
-    padding: 0.5rem;
+    background-color: var(--section-overlay);
+    
     font-size: 20px;
     font-weight: 200;
-}
-
-.section__inputs>input:focus {
     outline: none;
+
+    color: white;
 }
 
-.section__inputs>button {
-    padding: 10px 50px;
-    border: none;
-    border-radius: 00.4rem;
-    font-size: 20px;
-    font-weight: 500;
-    background-color: white;
-}
-
-.section__inputs>button:hover {
-    cursor: pointer;
-    background-color: lightgray;
-}
- 
 .icon {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    background-color: var(--section-overlay);
+    border-radius: 16px;
+    padding: 10px 10px;
+    box-shadow: 3px 4px gray;
 }
 
 .icon>h3 {
     font-size: 15px;
     font-weight: 200;
     text-transform: capitalize;
+    color: white;
+    text-shadow: 3px 3px black;
+}
+
+.temperature {
+    display: inline-block;
+    position: relative;
+    margin: 30px auto;
+    background-color: var(--section-overlay);
+    border-radius: 16px;
+    padding: 15px 15px;
+    box-shadow: 3px 6px gray;
 }
 
 .temperature>h1 {
-    font-size: 60px;
+    font-size: 120px;
+    text-shadow: 3px 5px black;
+    color: white;
 }
